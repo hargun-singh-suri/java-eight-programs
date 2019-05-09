@@ -1,0 +1,10 @@
+For person class perform below operation
+
+0: Print list before sort
+1: Sort the list on the basis of last name
+2: Print the sorted list
+3: Print the list data which has lastname start with K
+4: Print the list data which has firstname start with A
+
+Now here we will use existing interface from package java.util.function that is Predicate, this is generic type
+of Interface which will expect Object in input and return boolean which exactly match our need

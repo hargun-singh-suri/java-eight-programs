@@ -1,10 +1,9 @@
-package com.hargun.demo1.lambdaexpression;
+package com.hargun.demo1.predicate;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-
-import com.hargun.demo1.lambdaexpression.mainConventionalApproachGeneric.Condition;
+import java.util.function.Predicate;
 
 public class mainJavaEightLambdaExpression {
 
@@ -59,9 +58,9 @@ public class mainJavaEightLambdaExpression {
 
 	}
 
-	private static void printOnCondition(List<Person> list, Condition printCondition) {
+	private static void printOnCondition(List<Person> list, Predicate<Person> predicate) {
 		for (Person person : list) {
-			if (printCondition.testCondition(person))
+			if (predicate.test(person))
 				System.out.println(person.toString());
 		}
 	}
